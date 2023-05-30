@@ -1,3 +1,5 @@
+//Complete
+
 package task0603;
 
 /* 
@@ -14,7 +16,10 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) {
-        // напишите тут ваш код
+        for (int i = 0; i < 195_000; i++) {
+            new Cat();
+            new Dog();
+        }
     }
 }
 

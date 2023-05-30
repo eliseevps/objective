@@ -1,3 +1,5 @@
+//Complete
+
 package task0521;
 
 /* 
@@ -30,7 +32,7 @@ public class Circle {
     }
 
     public Circle(double x, double y) {
-        //напишите тут ваш код
+        this(x, y, 10);
     }
 
     public Circle() {

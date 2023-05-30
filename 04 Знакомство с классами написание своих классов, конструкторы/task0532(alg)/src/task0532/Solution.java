@@ -1,3 +1,5 @@
+//Complete
+
 package task0532;
 
 import java.io.BufferedReader;
@@ -22,10 +24,19 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int maximum = ;
+        int maximum = Integer.MIN_VALUE;
+        int count = -1;
+        int temp;
 
-        //напишите тут ваш код
-
+        while (count < 0) {
+            count = Integer.parseInt(reader.readLine());
+        }
+        for (int i = 0; i < count; i++) {
+            temp = Integer.parseInt(reader.readLine());
+            if (maximum < temp) {
+                maximum = temp;
+            }
+        }
         System.out.println(maximum);
     }
 }

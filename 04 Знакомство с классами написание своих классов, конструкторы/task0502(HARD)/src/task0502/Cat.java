@@ -1,3 +1,5 @@
+//Complete
+
 package task0502;
 
 /* 
@@ -26,10 +28,41 @@ public class Cat {
     }
 
     public boolean fight(Cat anotherCat) {
-        //напишите тут ваш код
+        byte parameter = 0;
+        if (!this.equals(anotherCat)) {
+            if (this.age < anotherCat.age) {
+                parameter++;
+            } else if (this.age > anotherCat.age) {
+                parameter--;
+            }
+            if (this.weight > anotherCat.weight) {
+                parameter++;
+            } else if (this.weight < anotherCat.weight) {
+                parameter--;
+            }
+            if (this.strength > anotherCat.strength) {
+                parameter++;
+            } else if (this.strength < anotherCat.strength) {
+                parameter--;
+            }
+        } else {
+            return false;
+        }
+        return parameter > 0;
     }
 
     public static void main(String[] args) {
+        Cat cat1 = new Cat();
+        Cat cat2 = new Cat();
 
+        cat1.age = 5;
+        cat1.weight = 7;
+        cat1.strength = 10;
+        cat2.age = 5;
+        cat2.weight = 6;
+        cat2.strength = 9;
+
+        System.out.println(cat1.fight(cat2));
+        System.out.println(cat1.fight(cat1));
     }
 }

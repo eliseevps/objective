@@ -1,3 +1,5 @@
+//Complete
+
 package task0526;
 
 /* 
@@ -20,8 +22,48 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        Man man1 = new Man("Anton", 22, "Moscow");
+        Man man2 = new Man("Gena", 33, "Norilsk");
+        Woman woman1 = new Woman("Anna", 18, "Ekaterinburg");
+        Woman woman2 = new Woman("Irina", 41, "Sankt-Peterburg");
+
+        System.out.println(man1);
+        System.out.println(man2);
+        System.out.println(woman1);
+        System.out.println(woman2);
     }
 
-    //напишите тут ваш код
+    public static class Man {
+        String name;
+        int age;
+        String address;
+
+        public Man(String name, int age, String address) {
+            this.name = name;
+            this.age = age;
+            this.address = address;
+        }
+
+        @Override
+        public String toString() {
+            return name + " " + age + " " + address;
+        }
+    }
+
+    public static class Woman {
+        String name;
+        int age;
+        String address;
+
+        public Woman(String name, int age, String address) {
+            this.name = name;
+            this.age = age;
+            this.address = address;
+        }
+
+        @Override
+        public String toString() {
+            return name + " " + age + " " + address;
+        }
+    }
 }
