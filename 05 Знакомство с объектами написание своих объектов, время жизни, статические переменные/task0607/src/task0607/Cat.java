@@ -1,3 +1,5 @@
+//Complete
+
 package task0607;
 
 /* 
@@ -14,9 +16,15 @@ Requirements:
 6. Конструктор класса должен на 1 увеличивать значение переменной catCount.*/
 
 public class Cat {
-    //напишите тут ваш код
+    static int catCount;
+    public Cat(){
+        catCount++;
+    }
 
     public static void main(String[] args) {
-
+        Cat cat1 = new Cat();
+        Cat cat2 = new Cat();
+        Cat cat3 = new Cat();
+        System.out.println(Cat.catCount);
     }
 }

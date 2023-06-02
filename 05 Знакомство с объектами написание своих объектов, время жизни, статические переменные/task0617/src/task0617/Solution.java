@@ -1,3 +1,5 @@
+//Complete
+
 package task0617;
 
 /* 
@@ -19,5 +21,13 @@ public class Solution {
         printIdea(new Idea());
     }
 
-    //напишите тут ваш код
+    public static void printIdea(Idea idea) {
+        System.out.println(idea.getDescriptions());
+    }
+
+    public static class Idea {
+        public String getDescriptions() {
+            return "Идея века";
+        }
+    }
 }
